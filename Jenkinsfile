@@ -5,7 +5,7 @@ pipeline {
     label 'golang2'
   }
   environment {
-    APP_NAME = "bookinfo-productpage"
+    APP_NAME = "bookinfo-details"
     VERSION = readFile('version').trim()
     DOCKER_REPO = "${env.DOCKER_REGISTRY_URL}/${env.APP_NAME}"
     TAG = "${env.VERSION}"
